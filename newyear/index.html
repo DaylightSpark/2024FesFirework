@@ -99,9 +99,7 @@ var _hmt = _hmt || [];
 
         <div class="stage-container remove">
         <div class="page_two hide">
-            <div id="text" style="display:none;"><br><span id="time"></span><br>岁未将至 平安喜乐 2023万事如意🧨
-<br>唯愿烟花像星辰   祝你所愿皆成真🧨<br><br>祝你钱兔无量，兔然暴富！
-<br><br>你是第<span id="busuanzi_value_page_pv"></span>个观赏到烟花的人</div><!--此处已进行修改，优化了倒计时-->
+            <div id="text" style="display:none;"><br>倒计时：<br><span id="time"></span><br>提前祝你龙年快乐，跨年后解锁新祝福，记得来看哦！<br>你是第<span id="busuanzi_value_page_pv"></span>个观赏到烟花的人</div><!--此处已进行修改，优化了倒计时-->
             <div class="type_words" id="contents" style="font-size:1.08rem;line-height:1.5rem;"></div>
         </div>
         <div class="canvas-container">
@@ -349,8 +347,8 @@ function TimeDown(id, endDateStr) {
 	var time_chunjie = new Date('2023-01-22 00:00:00').getTime();
 	console.log(time_now + "\n" + time_chuxi );
 	if(time_now < time_chuxi){
-		console.log("还没到除夕");
-		document.getElementById(id).innerHTML = "还有" + text + "就是除夕啦!";
+		console.log("还没到龙年");
+		document.getElementById(id).innerHTML = "还有" + text + "就是龙年（2024）啦!";
 		
 		//延迟一秒执行自己
 		setTimeout(function () {
@@ -367,7 +365,7 @@ function TimeDown(id, endDateStr) {
 			TimeDown(id, '2023-01-22 00:00:00');
 		}, 1000)
 	}else{
-		console.log("到春节啦~");
+		console.log("到龙年啦~");
 		document.getElementById("time").innerHTML =  "除夕夜已经过去啦，祝你新年快乐！";
 		if($("#audioDom").attr('src') != 'https://sf86-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/b4baa64585924b568460f6887abfdf30'){
 			$("#audioDom").attr('src','https://sf86-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/b4baa64585924b568460f6887abfdf30');
@@ -375,7 +373,7 @@ function TimeDown(id, endDateStr) {
 	}
 }
 
-TimeDown('time', '2023-01-21 00:00:00');
+TimeDown('time', '2024-01-01 00:00:00');
 
 /*
 function time() {
